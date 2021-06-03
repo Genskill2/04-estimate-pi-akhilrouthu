@@ -25,22 +25,20 @@ int main(void)
   }
 }
 
-float wallis_pi(int l)
+float wallis_pi(int i)
 {
-  if(l>0)
-  {
-  float value = 1; 
-  float a,b;
-  for(int i = 1; i<=l; i++)
-  {
-  a =  4(i*i);
-  b = (4(i*i)) - 1;
+  int a,b;
+  float value = 1;
   float c;
-  c =  a/b;
- 
-  value =  value*c;  
-  } 
-  value = value*2;
-  return value;
-  }  
+  for(int n=1; n<=i;n++)
+  {
+    a=4*(n*n);
+    b=(4*(n*n))-1;
+    c = (float)a/b;
+    value*=c;
+    
+  }
+  value= value*2;
+  return(value);
+  
 }
