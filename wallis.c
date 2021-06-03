@@ -28,13 +28,13 @@ int main(void)
 float wallis_pi(int l)
 {
   float value = 1; 
-  int a,b;
-  for(int i = 1; 0<i<=l; i++)
+  float a,b;
+  for(int i = 1; i<=l; i++)
   {
   a =  4(i*i);
   b = (4(i*i)) - 1;
   float c;
-  c = float (a)/b;
+  c =  a/b;
  
   value =  value*c;  
   } 
