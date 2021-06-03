@@ -5,7 +5,8 @@
 
 float wallis_pi(int);
 
-int main(void) {
+int main(void) 
+{
   float pi;
   for (int i=0; i<5; i++) {
     pi = wallis_pi(i);
@@ -24,3 +25,18 @@ int main(void) {
   }
 }
 
+float wallis_pi(int i)
+{
+  int a{},b{};
+  a =  4(i*i);
+  b = (4(i*i)) - 1;
+  float c{};
+  c = float (a)/b;
+  float value = 1;
+  for(int n{1}; n<=i; n++)
+  {
+    value = value*c;
+  }
+  return value;
+  
+}
