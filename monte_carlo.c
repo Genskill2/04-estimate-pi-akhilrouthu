@@ -6,7 +6,7 @@
 float mc_pi(int i)
 {
   float x,y,b,e;
-  float a = ;
+  float a = 0 ;
   for(int n = 0; n<=i; n++)
   {
     x = frandom();
@@ -20,7 +20,7 @@ float mc_pi(int i)
   
 }
 
-float frandom() {
+float frandom(float) {
   long int q = random();
   float ret = (float)q/(float)RAND_MAX;
   return ret;
