@@ -33,7 +33,7 @@ float wallis_pi(int l)
   {
   a =  4(i*i);
   b = (4(i*i)) - 1;
-  float c{};
+  float c;
   c = float (a)/b;
  
   value =  value*c;  
