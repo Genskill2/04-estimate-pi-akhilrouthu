@@ -6,7 +6,7 @@
 float mc_pi(int i)
 {
   float x,y,b,d;
-  int a = 0 ;
+  int a=0 ;
   for(int n = 0; n<=i; n++)
   {
    float x = frandom();
