@@ -27,6 +27,8 @@ int main(void)
 
 float wallis_pi(int l)
 {
+  if(l>0)
+  {
   float value = 1; 
   float a,b;
   for(int i = 1; i<=l; i++)
@@ -40,4 +42,5 @@ float wallis_pi(int l)
   } 
   value = value*2;
   return value;
+  }  
 }
