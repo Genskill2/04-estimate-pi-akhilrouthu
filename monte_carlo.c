@@ -38,7 +38,7 @@ int main(void) {
   }
 }
 
-float mc_pi(int i)
+float mc_pi(float i)
 {
   float x,y,b,d;
   int a=0 ;
