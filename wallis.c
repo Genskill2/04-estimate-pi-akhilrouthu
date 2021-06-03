@@ -4,6 +4,23 @@
 #include <math.h>
 
 
+float wallis_pi(int i)
+{
+  int a,b;
+  float value = 1;
+  float c;
+  for(int n=1; n<=i;n++)
+  {
+    a=4*(n*n);
+    b=(4*(n*n))-1;
+    c = (float)a/b;
+    value*=c;
+    
+  }
+  value= value*2;
+  return(value);
+  
+}
 
 int main(void) 
 {
@@ -25,20 +42,3 @@ int main(void)
   }
 }
 
-float wallis_pi(int i)
-{
-  int a,b;
-  float value = 1;
-  float c;
-  for(int n=1; n<=i;n++)
-  {
-    a=4*(n*n);
-    b=(4*(n*n))-1;
-    c = (float)a/b;
-    value*=c;
-    
-  }
-  value= value*2;
-  return(value);
-  
-}
