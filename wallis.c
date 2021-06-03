@@ -28,8 +28,8 @@ int main(void)
 float wallis_pi(int l)
 {
   float value = 1; 
-  int a{},b{};
-  for(int i{1}; 0<i<=l; i++)
+  int a,b;
+  for(int i = 1; 0<i<=l; i++)
   {
   a =  4(i*i);
   b = (4(i*i)) - 1;
@@ -40,6 +40,4 @@ float wallis_pi(int l)
   } 
   value = value*2;
   return value;
-  
-  
 }
