@@ -11,14 +11,14 @@ float frandom() {
 }
 float mc_pi(float i)
 {
-  float x,y,b,d;
+  float x,y,dist,d;
   int a=0 ;
   for(int n = 0; n<=i; n++)
   {
    float x = frandom();
    float y = frandom();
-   float b = sqrt((x*x) + (y*y));
-    if(b<=1){
+   float dist = sqrt((x*x) + (y*y));
+    if(dist<=1){
       a++;}
   }
   d = (float)(4*a)/i;
